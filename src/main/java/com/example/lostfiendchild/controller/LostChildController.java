@@ -4,6 +4,7 @@ import com.example.lostfiendchild.service.LostChildService;
 import com.example.lostfiendchild.viewModels.LostChildVM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -19,8 +20,9 @@ public class LostChildController {
         return "lostChild";
     }
     @PostMapping(value = "/addLostChild")
-    String addLostChild(LostChildVM lostChild){
+    String addLostChild(LostChildVM lostChild, Model model){
         lostChildService.saveLostChiuld(lostChild);
-        return "lostChild";
+        model.addAttribute("childes", lostChildService.getAllChild());
+        return "index";
     }
 }
