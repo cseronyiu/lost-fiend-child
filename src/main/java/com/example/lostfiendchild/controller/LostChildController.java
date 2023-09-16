@@ -16,7 +16,7 @@ public class LostChildController {
 
     @GetMapping(value = "/lost")
     String lostChild(){
-        lostChildService.saveLostChiuld();
+//        lostChildService.saveLostChiuld();
         return "lostChild";
     }
     @PostMapping(value = "/addLostChild")
