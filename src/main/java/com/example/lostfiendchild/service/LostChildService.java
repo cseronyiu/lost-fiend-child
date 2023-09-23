@@ -24,6 +24,10 @@ public class LostChildService {
         lostChildEntity.setAge(lostChild.getAge());
         lostChildEntity.setHeight(lostChild.getHeight());
         lostChildEntity.setWeight(lostChild.getWeight());
+        lostChildEntity.setFather_name(lostChild.getFather_name());
+        lostChildEntity.setMother_name(lostChild.getMother_name());
+        lostChildEntity.setAddress(lostChild.getAddress());
+        lostChildEntity.setPhn_num(lostChild.getPhn_num());
         lostChildRepository.save(lostChildEntity);
     }
 

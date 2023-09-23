@@ -7,6 +7,11 @@ public class LostChildVM {
     private String height;
     private String weight;
 
+    private String father_name;
+    private String mother_name;
+    private String address;
+    private String phn_num;
+
     public LostChildVM() {
     }
 
@@ -49,4 +54,37 @@ public class LostChildVM {
     public void setWeight(String weight) {
         this.weight = weight;
     }
+
+    public String getFather_name() {
+        return father_name;
+    }
+
+    public void setFather_name(String father_name) {
+        this.father_name = father_name;
+    }
+
+    public String getMother_name() {
+        return mother_name;
+    }
+
+    public void setMother_name(String mother_name) {
+        this.mother_name = mother_name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhn_num() {
+        return phn_num;
+    }
+
+    public void setPhn_num(String phn_num) {
+        this.age = phn_num;
+    }
+
 }
