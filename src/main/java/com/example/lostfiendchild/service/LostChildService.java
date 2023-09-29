@@ -14,7 +14,6 @@ public class LostChildService {
     LostChildRepository lostChildRepository;
     public void saveLostChiuld() {
         LostChildEntity lostChildEntity = new LostChildEntity();
-        lostChildEntity.setName("Zaman");
         lostChildRepository.save(lostChildEntity);
     }
 
