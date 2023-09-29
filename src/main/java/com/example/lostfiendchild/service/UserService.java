@@ -22,7 +22,7 @@ public class UserService {
         userRepository.save(userEntity);
     }
 
-    public void saveUser(UserVM user) {
+    public UserEntity saveUser(UserVM user) {
         UserEntity userEntity = new UserEntity();
         userEntity.setName(user.getName());
         userEntity.setPhoneNumber(user.getPhoneNumber());
@@ -33,6 +33,7 @@ public class UserService {
         userEntity.setPassword(user.getPassword());
         userEntity.setVerifyPassword(user.getVerifyPassword());
         userRepository.save(userEntity);
+        return userEntity;
     }
 
     public List<UserEntity> getAllChild() {

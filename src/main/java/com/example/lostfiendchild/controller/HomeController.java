@@ -31,10 +31,14 @@ public class HomeController {
     }
 
     @PostMapping(value = "/saveSignupData")
-    String saveSignupData(Model model)
+    String saveSignupData(UserVM userVM,Model model)
     {
-//        model.addAttribute("childes", lostChildService.getAllChild());
-        return "signup";
+        var user = userService.saveUser(userVM);
+        if(user != null){
+            return "login";
+        } else {
+            return "signup";
+        }
     }
     @GetMapping(value = "/login")
     String login(Model model)
