@@ -38,4 +38,8 @@ public class UserService {
     public List<UserEntity> getAllChild() {
         return userRepository.findAllByOrderByIdDesc();
     }
+
+    public List<UserEntity> getUserByEmailAndPassword(UserVM user){
+        return userRepository.findAllByEmailAndPassword(user.getEmail(),user.getPassword());
+    }
 }

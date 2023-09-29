@@ -17,4 +17,5 @@ import com.example.lostfiendchild.entity.LostChildEntity;
 @Repository
 public interface UserRepository extends CrudRepository<UserEntity,Integer> {
     List<UserEntity> findAllByOrderByIdDesc();
+    List<UserEntity> findAllByEmailAndPassword(String email,String password);
 }
