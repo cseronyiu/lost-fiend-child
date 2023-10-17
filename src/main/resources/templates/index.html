@@ -82,6 +82,7 @@
                                 <th>Age</th>
                                 <th>Height</th>
                                 <th>Weight</th>
+                                <th>Image</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -90,6 +91,7 @@
                                 <th>Age</th>
                                 <th>Height</th>
                                 <th>Weight</th>
+                                <th>Image</th>
 
                             </tr>
                             </tfoot>
@@ -99,6 +101,7 @@
                                 <td th:text="${child.age}" />
                                 <td th:text="${child.height}" />
                                 <td th:text="${child.weight}" />
+                                <td><img th:if="child.imageFileNamePath != null " th:src="@{${child.imageFileNamePath}}" height="60px" /></td>
                             </tr>
                             </tbody>
                         </table>

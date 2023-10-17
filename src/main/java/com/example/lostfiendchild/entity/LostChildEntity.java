@@ -17,6 +17,7 @@ public class LostChildEntity {
     private String mother_name;
     private String address;
     private String phn_num;
+    private String imageFileName;
 
     public LostChildEntity() {
     }
@@ -93,4 +94,11 @@ public class LostChildEntity {
         this.age = phn_num;
     }
 
+    public String getImageFileName() {
+        return imageFileName;
+    }
+
+    public void setImageFileName(String imageFileName) {
+        this.imageFileName = imageFileName;
+    }
 }

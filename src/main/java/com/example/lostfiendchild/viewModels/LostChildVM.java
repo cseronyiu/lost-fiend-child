@@ -6,11 +6,12 @@ public class LostChildVM {
     private String age;
     private String height;
     private String weight;
-
     private String father_name;
     private String mother_name;
     private String address;
     private String phn_num;
+    private String imageFileName;
+    private String imageFileNamePath;
 
     public LostChildVM() {
     }
@@ -87,4 +88,19 @@ public class LostChildVM {
         this.age = phn_num;
     }
 
+    public String getImageFileName() {
+        return imageFileName;
+    }
+
+    public void setImageFileName(String imageFileName) {
+        this.imageFileName = imageFileName;
+    }
+
+    public String getImageFileNamePath() {
+        return imageFileNamePath;
+    }
+
+    public void setImageFileNamePath(String imageFileNamePath) {
+        this.imageFileNamePath = imageFileNamePath;
+    }
 }
